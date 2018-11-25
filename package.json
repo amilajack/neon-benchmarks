@@ -10,6 +10,11 @@
     "benchmarks/*"
   ],
   "devDependencies": {
-    "lerna": "^3.4.3"
+    "lerna": "^3.4.3",
+    "yarn": "^1.12.3"
+  },
+  "scripts": {
+    "bench": "lerna run benchmark",
+    "test": "yarn benchmark"
   }
 }
