@@ -1,0 +1,15 @@
+{
+  "name": "neon-benchmarks",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:amilajack/neon-benchmarks.git",
+  "author": "Amila Welihinda <amilajack@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "benchmarks/*"
+  ],
+  "devDependencies": {
+    "lerna": "^3.4.3"
+  }
+}
