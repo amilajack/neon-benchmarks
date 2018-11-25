@@ -35,11 +35,13 @@ suite
     ...defaultOpts
   })
   .on('complete', function complete() {
+    if (suite.aborted) return;
     console.log(`Fastest is ${this.filter('fastest').map('name')}`);
+    console.log('Higher is better:');
     suite
       .map(benchmark => ({ name: benchmark.name, score: benchmark.hz }))
       .forEach(benchmark => {
-        console.log(benchmark.name, benchmark.hz);
+        console.log(benchmark.name, benchmark.score);
       });
   })
   .run();
