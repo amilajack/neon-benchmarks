@@ -1,3 +1,1 @@
-const addon = require('../native/index.node');
-
-console.log(addon.hello());
+module.exports = require('../native/index.node');

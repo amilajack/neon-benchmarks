@@ -16,13 +16,14 @@
     "yarn": "^1.12.3"
   },
   "scripts": {
-    "bench": "lerna run benchmark",
-    "benchmark": "yarn benchmark",
+    "bench": "lerna run bench",
+    "benchmark": "yarn bench",
     "lint": "eslint .",
     "postinstall": "lerna run install",
     "test": "yarn lint && yarn benchmark"
   },
-  "eslintConfig": {
-    "extends": "bliss"
+  "dependencies": {
+    "benchmark": "^2.1.4",
+    "utils": "^0.3.1"
   }
 }

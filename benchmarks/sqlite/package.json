@@ -1,10 +1,13 @@
 {
   "name": "sqlite",
+  "version": "0.0.0",
   "main": "lib/index.js",
   "dependencies": {
-    "neon-cli": "^0.2.0"
+    "neon-cli": "^0.2.0",
+    "sqlite3": "^4.0.4"
   },
   "scripts": {
+    "bench": "node sqlite.bench.js",
     "install": "neon build --release"
   }
 }
