@@ -1,5 +1,6 @@
 const Benchmark = require('benchmark');
 const { Database } = require('sqlite3');
+const betterSqlite = require('better-sqlite3');
 const neonLib = require('.');
 
 const suite = new Benchmark.Suite();
@@ -10,7 +11,7 @@ const defaultOpts = {
 };
 
 suite
-  .add('Sqlite', {
+  .add('sqlite3', {
     fn: () => {
       const db = new Database(':memory:');
 
@@ -28,7 +29,22 @@ suite
     },
     ...defaultOpts
   })
-  .add('Neon', {
+  .add('better-sqlite3', {
+    fn: () => {
+      const db = betterSqlite(':memory:');
+
+      db.exec('CREATE TABLE lorem (info TEXT)');
+
+      const stmt = db.prepare('INSERT INTO lorem VALUES (?)');
+      for (let i = 0; i < 10; i++) {
+        stmt.run(`Ipsum ${i}`);
+      }
+
+      db.close();
+    },
+    ...defaultOpts
+  })
+  .add('neon hello', {
     fn: () => {
       neonLib.hello();
     },
