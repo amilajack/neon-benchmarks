@@ -2921,17 +2921,6 @@ graceful-fs@^4.2.0:
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.0.tgz#8d8fdc73977cb04104721cb53666c1ca64cd328b"
   integrity sha512-jpSvDPV4Cq/bgtpndIWbI5hmYxhQGHPC4d4cqBPb4DLniCfhJokdXhwhaDuLBGLQdvvRum/UiX6ECVIPvDXqdg==
 
-handlebars@^4.0.3:
-  version "4.0.12"
-  resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.0.12.tgz#2c15c8a96d46da5e266700518ba8cb8d919d5bc5"
-  integrity sha512-RhmTekP+FZL+XNhwS1Wf+bTTZpdLougwt5pcgA1tuz6Jcx0fpH/7z0qd71RKnZHBCxIRBHfBOnio4gViPemNzA==
-  dependencies:
-    async "^2.5.0"
-    optimist "^0.6.1"
-    source-map "^0.6.1"
-  optionalDependencies:
-    uglify-js "^3.1.4"
-
 handlebars@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.1.0.tgz#0d6a6f34ff1f63cecec8423aa4169827bf787c3a"
@@ -4173,17 +4162,17 @@ needle@^2.2.1:
     iconv-lite "^0.4.4"
     sax "^1.2.4"
 
-neon-cli@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/neon-cli/-/neon-cli-0.2.0.tgz#cc02148ea7d032f6774e645cc2a9e44e09248b4b"
-  integrity sha512-IsrxCyUcuAyWiq4Z+JnTXrjurj2SAL2VtWnCXS8iBYGJeIs1NIhFuLaM6fe7+rOyFfDcqUUTWGxZmkvUqwweRA==
+neon-cli@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/neon-cli/-/neon-cli-0.3.1.tgz#be82c0b57a024080f712abb648abcd2f680f9636"
+  integrity sha512-OBrJbDD0BNDPxWwh88kWd2dJkXWEZ/mrCPF/ADrsLgHmF2qDdbXagli48I7yVl1ngMtItrvI7JqBeiNQNtN1ww==
   dependencies:
     chalk "~2.1.0"
     command-line-args "^4.0.2"
     command-line-commands "^2.0.0"
     command-line-usage "^4.0.0"
     git-config "0.0.7"
-    handlebars "^4.0.3"
+    handlebars "^4.1.0"
     inquirer "^3.0.6"
     mkdirp "^0.5.1"
     quickly-copy-file "^1.0.0"
