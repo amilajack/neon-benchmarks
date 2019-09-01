@@ -4,7 +4,7 @@
   "main": "lib/index.js",
   "dependencies": {
     "better-sqlite3": "^5.4.2",
-    "neon-cli": "^0.2.0",
+    "neon-cli": "^0.3.1",
     "sqlite3": "^4.1.0"
   },
   "scripts": {
