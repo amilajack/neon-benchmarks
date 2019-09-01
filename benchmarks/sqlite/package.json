@@ -5,7 +5,7 @@
   "dependencies": {
     "better-sqlite3": "^5.4.1",
     "neon-cli": "^0.2.0",
-    "sqlite3": "^4.0.9"
+    "sqlite3": "^4.1.0"
   },
   "scripts": {
     "bench": "node sqlite.bench.js",
